@@ -27,6 +27,14 @@ type Auth {
     user: User
 }
 
+input BookInput{
+    bookID: String
+    authors: Strings
+    description: String
+    title: String
+    image: String
+    link: String
+}
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
