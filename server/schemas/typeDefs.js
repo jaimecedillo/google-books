@@ -15,7 +15,7 @@ type Query {
   }
 type Book {
     bookId: String
-    authors: Strings
+    authors: String
     description: String
     title: String
     image: String
@@ -29,7 +29,7 @@ type Auth {
 
 input BookInput{
     bookID: String
-    authors: Strings
+    authors: String
     description: String
     title: String
     image: String
