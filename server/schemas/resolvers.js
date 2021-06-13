@@ -9,6 +9,7 @@ const resolvers = {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                     .select('-__v -password')
+                    .populate('books');
                 return userData;
             }
             throw new AuthenticationError('Not logged in');
@@ -44,7 +45,7 @@ const resolvers = {
                     User.findByIdAndUpdate(
                         { _id: context.user._id },
                         { $addToSet: { savedBooks: book } },
-                        { new: true, runValidators: true }
+                        { new: true }
                     );
 
                 return updatedBooks;
@@ -56,6 +57,7 @@ const resolvers = {
         removeBook: async (parent, { bookId }, context) => {
             if (context.user) {
                 const updatedBook = await
+
 
                     User.findByIdAndUpdate(
                         { _id: context.user._id },
