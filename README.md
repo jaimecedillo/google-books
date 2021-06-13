@@ -1,3 +1,4 @@
+
 # Google Books
 
 
@@ -7,7 +8,7 @@ A MERN stack Application that uses google books API. It helps user find books to
 
 Application Link: [Here](https://googlebook21.herokuapp.com/)
 
-![Application Screenshot](https://github.com/jaimecedillo/money-tracker/blob/main/screenshot.png)
+![Application Screenshot](https://user-images.githubusercontent.com/74879881/121824768-d5795e00-cc6b-11eb-886f-9b765a2f7301.png)
 
 
 ## Installation
